@@ -1,0 +1,35 @@
+<view class="page">
+	<view class="login-wrap">
+		 <image class="logo" src="../../images/logo.jpg"></image> 
+		<view class="weui-cells weui-cells_after-title">
+		    <view class="weui-cell weui-cell_input">
+		        <view class="weui-cell__hd">
+		            <view class="weui-label">账号</view>
+		        </view>
+		        <view class="weui-cell__bd">
+		            <input value="{{email}}" class="weui-input" bindchange="inputEmail" placeholder="请输入邮箱"/>
+		        </view>
+		    </view>
+		    <view class="weui-cell weui-cell_input weui-cell_vcode">
+		        <view class="weui-cell__hd">
+		            <view class="weui-label">密码</view>
+		        </view>
+		        <view class="weui-cell__bd">
+		            <input value="{{password}}" class="weui-input" type="password" bindchange="inputPassword" placeholder="请输入密码" />
+		        </view>
+		    </view>   
+		</view>
+		<checkbox-group class="remenber" bindchange="bindAgreeChange">
+            <label class="weui-agree" for="weuiAgree">
+                <view class="weui-agree__text">
+                    <checkbox class="weui-agree__checkbox" id="weuiAgree" value="agree" checked="{{isAgree}}" />
+                    <view class="weui-agree__checkbox-icon">
+                        <icon class="weui-agree__checkbox-icon-check" type="success_no_circle" size="9" wx:if="{{isAgree}}"></icon>
+                    </view>
+                    记住账号密码
+                </view>
+            </label>
+        </checkbox-group>
+		<button class="login-btn" bindtap="onLogin">登录</button>
+	</view>
+</view>

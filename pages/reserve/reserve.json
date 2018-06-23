@@ -1,0 +1,7 @@
+{
+    "navigationBarTextStyle": "#fff",
+    "navigationBarTitleText": "会议室预定",
+    "backgroundColor": "#fff",
+    "backgroundTextStyle": "light",
+    "enablePullDownRefresh": false
+}

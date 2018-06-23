@@ -1,0 +1,7 @@
+{
+    "navigationBarTextStyle": "#fff",
+    "navigationBarTitleText": "异地速约",
+    "backgroundColor": "#fff",
+    "backgroundTextStyle": "light",
+    "enablePullDownRefresh": false
+}

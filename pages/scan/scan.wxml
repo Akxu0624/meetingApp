@@ -1,0 +1,26 @@
+<!--scan.wxml-->
+<view class="page">	
+	<view class="p-container" wx:if="{{brDetailsList.array.length>0}}">
+		<view class="title">
+			{{title}}
+		</view>
+		<view class="list-wrap">
+			<view class="main-list" wx:for="{{brDetailsList.array}}">
+				<view class="list-left">
+					<view class="start-time">{{item.start_time}}</view>
+					<view class="end-time">{{item.end_time}}</view>
+				</view>
+				<view class="list-right">
+					<view class="list-title">{{item.title}}</view>
+					<view class="list-initiator">
+						<image class="list-icon" src="../../images/num.png"></image>
+						<view class="list-people">{{item.initiator}}</view>
+					</view>
+				</view>
+			</view>
+		</view>
+	</view>
+	<view wx:else>
+		<image class="no-data" src="../../images/nomsg.png"></image>
+	</view>
+</view>

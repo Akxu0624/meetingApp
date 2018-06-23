@@ -1,0 +1,119 @@
+.r-right {
+	width: 22rpx;
+	height: 37rpx;
+	border-radius: 50%;
+	display: inline-block;
+	vertical-align: middle;
+	margin: 18rpx;
+}
+.weui-cell_input {
+	display: flex;
+}
+.weui-cell__hd {
+	width: 20% !important;
+}
+.s-time {
+	display: inline-block;
+	height: 2.58823529em;
+	min-height: 2.58823529em;
+	line-height: 2.58823529em;
+}
+.e-time {
+	display: inline-block;
+	height: 2.58823529em;
+	min-height: 2.58823529em;
+	line-height: 2.58823529em;
+}
+.r-dev-wrap {
+	height: 2.58823529em;
+	min-height: 2.58823529em;
+	line-height: 2.58823529em;
+}
+.r-item {
+	display:inline-block;
+	width:24%;
+	text-align:center;
+	margin:0 50rpx 15rpx 0;
+	font-size:30rpx;
+	height:62rpx;
+	line-height:62rpx;
+	border-radius:12rpx;
+}
+.r-dev {
+	display: inline-block;
+	width: 24%;
+	text-align: center;
+	margin: 0 50rpx 15rpx 0;
+	font-size: 30rpx;
+	height: 62rpx;
+	line-height: 62rpx;
+	border-radius: 12rpx;
+}
+.r-time {
+	display:inline-block;
+	width:24%;
+	text-align:center;
+	margin:0 50rpx 15rpx 0;
+	font-size:30rpx;
+	height:62rpx;
+	line-height:62rpx;
+	border-radius:12rpx;
+}
+.active {
+	background: #1D8CE0;
+	color: #fff;
+}
+.search {
+	color: #fff;
+	background: #1D8CE0;
+	height: 80rpx;
+	line-height: 80rpx;
+	width: 92%;
+	margin-top: 55rpx;
+}
+.time-msg {
+	display: inline-block;
+	position: absolute;
+	right: 27rpx;
+	top: 18rpx;
+	font-size: 30rpx;
+	color: #8492A6;
+}
+.len-time {
+	width: 80%;
+}
+.list-name {
+	display: inline-block;
+	text-align: center;
+	padding: 0 20rpx;
+	margin: 0 20rpx 15rpx 0;
+	font-size: 30rpx;
+	height: 62rpx;
+	line-height: 62rpx;
+	border-radius: 8rpx;
+	background: #1D8CE0;
+	color: #fff;
+}
+.list-del {
+	position: absolute;
+	width: 30rpx;
+	height: 30rpx;
+	background: #FF4949;
+	border-radius: 50%;
+	top: 0;
+	right: 0;
+}
+.list-del image{
+	position: absolute;
+	width: 30rpx;
+	height: 30rpx;
+	background: #FF4949;
+	border-radius: 50%;
+	top: 0;
+	right: 0;
+}
+.weui-cell__bd {
+	height: 2.58823529em;
+	min-height: 2.58823529em;
+	line-height: 2.58823529em;
+}

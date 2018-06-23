@@ -1,0 +1,7 @@
+{
+    "navigationBarTextStyle": "#fff",
+    "navigationBarTitleText": "同城预定",
+    "backgroundColor": "#fff",
+    "backgroundTextStyle": "dark",
+    "enablePullDownRefresh": true
+}

@@ -1,0 +1,26 @@
+<!--index.wxml-->
+<view class="page">
+	<view class="page-wrap">
+    <image class="logo" src="../../images/logo.jpg"></image> 
+		<view class="btn">
+			<button bindtap="scan" bindtap="scan">
+				<image src="../../images/scan.png"></image>扫二维码
+			</button>
+		</view>
+		<view class="btn">
+			<button bindtap="local">
+				<image src="../../images/local.png"></image>同城预定
+			</button>
+		</view>
+		<view class="btn">
+			<button bindtap="remote">
+				<image src="../../images/remote.png"></image>异地预定
+			</button>
+		</view>
+		<view class="btn">
+			<button bindtap="schedule">
+				<image src="../../images/schedule.png"></image>我的行程
+			</button>
+		</view>
+	</view>
+</view>

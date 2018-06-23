@@ -1,0 +1,75 @@
+.page {
+    height: 100%;
+    background: #eee;
+}
+.user {
+  padding-top: 40rpx;
+}
+.user-wrap {
+    position: relative;
+    padding-left: 28rpx;
+    background: #fff;
+}
+.item {
+    height: 2.58823529em;
+    min-height: 2.58823529em;
+    line-height: 2.58823529em;
+    border-bottom: 3rpx solid #ebebeb;
+}
+.item-title {
+    display: inline-block;
+    color: #575757;
+}
+.item-content {
+    float: right;
+    display: inline-block;
+    font-size: 32rpx;
+    margin-right: 20rpx;
+    color: #646464;
+}
+.p-list-item {
+    width: 100rpx;
+    text-align: center;
+    display: inline-block;
+    margin-left: 16rpx;
+}
+.li-image {
+    width: 90rpx;
+    height: 90rpx;
+    border-radius: 50%;
+}
+.li-name {
+    font-size: 30rpx;
+    text-align: center;
+}
+.register-wrap {
+    text-align: center;
+}
+.jumper {
+    display: inline-block;
+    color: #fff;
+    background: #48c23d;
+    height: 80rpx;
+    line-height: 80rpx;
+    margin: 100rpx 0 0;
+    width: 92%;
+}
+.register {
+    display: inline-block;
+    color: #fff;
+    background: #FF4949;
+    height: 80rpx;
+    line-height: 80rpx;
+    margin: 20rpx 0 0;
+    width: 92%;
+}
+.user-head {
+  position:relative;
+  display:inline-block;
+  left:50%;
+  margin-left:-60rpx;
+  width:120rpx;
+  height:120rpx;
+  border-radius:50%;
+  background:#F1F1F1;
+}

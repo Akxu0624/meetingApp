@@ -1,0 +1,158 @@
+<view class="page">
+    <view class="weui-cells weui-cells_after-title">
+        <view class="weui-cell weui-cell_input">
+            <view class="weui-cell__hd">
+                <view class="weui-label">标题</view>
+            </view>
+            <view class="weui-cell__bd">
+                <input class="weui-input" value="{{title}}" bindblur="getTitle" placeholder="请输入会议主题"/>
+            </view>
+        </view>
+        <view class="weui-cell  weui-cell_input">
+             <view class="weui-cell__hd">
+                <view class="weui-label">描述</view>
+            </view>
+            <view class="weui-cell__bd">
+                <input class="weui-input" value="{{describe}}" bindblur="getDescribe" placeholder="请输入会议描述"/>
+            </view>
+        </view>
+        <view class="weui-cell weui-cell_input">
+            <view class="weui-cell__hd">
+                <view class="weui-label">日期</view>
+            </view>
+            <view class="weui-cell__bd">
+                <picker
+                    wx:if="{{source === ''}}"
+                    class="weui-input" 
+                    mode="date" 
+                    bindchange="onChangeSdate" 
+                    value="{{date}}" 
+                    start="{{sdate}}" 
+                    end="2100-01-01" 
+                    data-sdate="{{sdate}}">
+                    {{sdate}}
+    		   </picker>
+               <view class="weui-input" wx:else>
+                    {{sdate}}
+               </view>
+            </view>
+            <view style="display: inline-block;margin-right: 55rpx">至</view>
+            <view class="weui-cell__bd">
+                <picker
+                    wx:if="{{source === ''}}"
+                    class="weui-input" 
+                    mode="date" 
+                    bindchange="onChangeEdate" 
+                    value="{{date}}" 
+                    start="{{sdate}}" 
+                    end="2100-01-01" 
+                    data-edate="{{edate}}" >
+                    {{edate}}
+               </picker>
+               <view class="weui-input" wx:else>
+                    {{edate}}
+               </view>
+            </view>
+        </view>
+        <view class="weui-cell weui-cell_input">
+            <view class="weui-cell__hd">
+                <view class="weui-label">时间</view>
+            </view>
+            <view class="weui-cell__bd">
+                <picker
+                    class="weui-input" 
+                    mode="time" 
+                    value="{{time}}" 
+                    bindchange="onChangeStime" >
+                    {{stime}}
+    		   </picker>
+            </view>
+            <view style="display: inline-block;margin-right: 55rpx">至</view>
+            <view class="weui-cell__bd">
+                <picker
+                    class="weui-input"
+                    mode="time" 
+                    value="{{time}}" 
+                    bindchange="onChangeEtime">
+                    {{etime}}
+               </picker>
+            </view>
+        </view>
+        <view wx:if="{{source === 'remote'}}" class="weui-cell">
+            <view class="weui-cell__hd">
+                <view class="weui-label">联系人</view>
+            </view>
+            <view style="flex: 1" >
+                <view class="c-list">
+                    <view 
+                        class="list-room"
+                        wx:for="{{rcontacts}}" 
+                        wx:key="{{rcontacts}}">
+                        {{item}}
+                    </view>
+                </view>
+            </view>
+        </view>
+        <view wx:else class="weui-cell weui-cell_input">
+            <view class="weui-cell__hd">
+                <view class="weui-label">联系人</view>
+            </view>
+            <view style="flex: 1">
+                <view wx:if="{{rcontacts.length>0}}" class="c-list">
+                    <view class="list-name" wx:key="{{item.email}}" wx:for="{{rcontacts}}" data-email="{{item.email}}" data-name="{{item.name}}" bindtap="delContacts">
+                        {{item.name}} ×
+                    </view>
+                </view>
+                <input wx:else class="weui-input" bindblur="getTitle" placeholder="请选择参会者" bindtap="onSelect" disabled/>
+            </view>
+            <view  bindtap="onSelect">
+                 <image class="r-right" src="../../images/icon-arrow.png"></image>
+            </view>
+        </view>
+        <view wx:if="{{source === ''}}" class="weui-cell weui-cell_input">
+            <view class="weui-cell__hd">
+                <view class="weui-label">地点</view>
+            </view>
+             <view style="flex: 1">
+                <view  wx:if="{{rboardroom.length>0&&source === ''}}"  class="c-list">
+                    <view class="list-room" wx:key="{{item.id}}" wx:for="{{rboardroom}}" data-id="{{item.id}}" data-name="{{item.name}}" bindtap="delBoardRoom">
+                        {{item.name}} ×
+                    </view>
+                </view>
+                <input wx:else class="weui-input" value="{{title}}" bindblur="getTitle" placeholder="请选择会议室" bindtap="onSelectBR" disabled/>
+            </view>
+            <view  bindtap="onSelectBR">
+                 <image class="r-right" src="../../images/icon-arrow.png"></image>
+            </view>
+        </view>
+        <view wx:elif="{{source === 'local'}}" class="weui-cell">
+            <view class="weui-cell__hd">
+                <view class="weui-label">地点</view>
+            </view>
+            <view style="flex: 1">
+                <view class="c-list">
+                    <view class="list-room">
+                        {{rboardroom[0].roomName}}
+                    </view>
+                </view>
+            </view>
+        </view>
+        <view wx:elif="{{source === 'remote'}}" class="weui-cell">
+            <view class="weui-cell__hd">
+                <view class="weui-label">地点</view>
+            </view>
+            <view style="flex: 1" >
+                <view class="c-list">
+                    <view 
+                        class="list-room"
+                        wx:for="{{rboardroom}}" 
+                        wx:key="{{rboardroom}}">
+                        {{item.roomName}}
+                    </view>
+                </view>
+            </view>
+        </view>
+        <view wx:else></view>
+    </view>
+    <button class="reserve" bindtap="onReserve">预定</button>
+</view>

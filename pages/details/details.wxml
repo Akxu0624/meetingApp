@@ -1,0 +1,60 @@
+<!-- details.wxml -->
+<view class="page">
+	<view class="details-wrap">
+		<view class="item">
+			<view class="item-title">开始时间</view>
+			<view class="item-content">2018-06-30 14:30</view>
+		</view>
+		<view class="item">
+			<view class="item-title">结束时间</view>
+			<view class="item-content">2017-06-30 14:30</view>
+		</view>
+		<view class="item">
+			<view class="item-title">房间人数</view>
+			<view class="item-content">6人</view>
+		</view>
+		<view class="item">
+			<view class="item-title">会议室</view>
+			<view class="item-content" style="color: #a3a3a3">桃花源</view>
+		</view>
+	</view>
+	<view class="details-wrap" style="margin-top: 50rpx;">
+		<view class="item">
+			<view class="item-title">会议主题</view>
+			<view class="item-content" style="color: #a3a3a3">世界杯吐槽大会</view>
+		</view>
+		<view class="item">
+			<view class="item-title">会议说明</view>
+			<view class="item-content" style="color: #a3a3a3">主要讨论国足在世界杯上的表现</view>
+		</view>
+		<view class="item">
+			<view class="item-title">会议主持</view>
+			<view class="item-content" style="color: #a3a3a3">中国足球队队长</view>
+		</view>
+		<view class="item-participant">
+			<view class="item-title">参会人</view>
+			<view class="p-list">
+				<view class="p-list-item">
+          <image class="li-image" src='../../images/1.jpg'></image>
+					<view class="li-name">内马尔</view>
+				</view>
+				<view class="p-list-item">
+					<image class="li-image" src='../../images/2.jpg'></image>
+					<view class="li-name">C罗</view>
+				</view>
+				<view class="p-list-item">
+					<image class="li-image" src='../../images/3.jpg'></image>
+					<view class="li-name">梅西</view>
+				</view>
+				<view class="p-list-item">
+					<image class="li-image" src='../../images/4.jpg'></image>
+					<view class="li-name">德勒</view>
+				</view>
+			</view>
+		</view>
+	</view>
+	<view class="cancel-wrap">
+		<button class="warn" class="cancel">取消会议</button>
+	</view>
+</view>
+

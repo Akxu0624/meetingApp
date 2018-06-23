@@ -1,0 +1,50 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/local/local",
+    "pages/remote/remote",
+    "pages/schedule/schedule",
+    "pages/scan/scan",
+    "pages/reserve/reserve",
+    "pages/remoteResult/remoteResult",
+    "pages/contacts/contacts",
+    "pages/boardroom/boardroom",
+    "pages/details/details",
+    "pages/list/list",
+    "pages/user/user",
+    "pages/main/main"
+  ],
+  "window": {
+    "navigationBarBackgroundColor": "#0068c4",
+    "navigationBarTextStyle": "#fff",
+    "navigationBarTitleText": "会议室预定助手",
+    "backgroundColor": "#eeeeee",
+    "backgroundTextStyle": "light"
+  },
+  "tabBar": {
+    "list": [
+      {
+        "pagePath": "pages/main/main",
+        "iconPath": "images/manage1.png",
+        "selectedIconPath": "images/manage.png",
+        "text": "首页"
+      },
+      {
+        "pagePath": "pages/list/list",
+        "iconPath": "images/chaxun1.png",
+        "selectedIconPath": "images/chaxun.png",
+        "text": "查询"
+      },
+      {
+        "pagePath": "pages/user/user",
+        "iconPath": "images/index1.png",
+        "selectedIconPath": "images/index.png",
+        "text": "个人"
+      }
+    ],
+    "position": "bottom",
+    "borderStyle": "#000",
+    "selectedColor": "#1296db"
+  },
+  "debug": "true"
+}

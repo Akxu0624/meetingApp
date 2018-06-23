@@ -1,0 +1,26 @@
+<view class="page">
+  <view class="searchLetter touchClass">
+    <view wx:for="{{searchCity}}" style="color:#2ab4ff;font-size:24rpx;" wx:key="index" data-letter="{{item.name}}" catchtouchend="clickLetter" >{{item.name}}</view>
+  </view>
+  <!--侧边字母选择栏-->
+  <block wx:if="{{isShowLetter}}">
+    <view class="showSlectedLetter">
+      {{showLetter}}
+    </view>
+  </block>
+  <!--主界面-->
+  <scroll-view scroll-y="true" style="height:{{winHeight}}px" bindscroll="bindScroll" 
+   scroll-into-view="{{scrollTopId}}" scroll-top="{{scrollTop}}">
+    <view class="selection" wx:for="{{boardroomList}}" wx:key="{{item.initial}}">
+      <view class="item_letter"  id="{{item.initial}}">{{item.initial}}</view>
+      <view class="item_city"  wx:for="{{item.boardroomInfo}}" wx:for-item="ct" wx:key="{{ct.id}}" data-id="{{ct.id}}" data-name="{{ct.name}}" bindtap="onSelectItem">
+        <view style="display: inline-block;font-size: 36rpx;">{{ct.name}}</view>
+        <!--选中钩子，根据check属性判断-->
+        <view class="s-check" wx:if="{{ct.check}}" >
+          <image src="../../images/check.png"></image>
+        </view>
+      </view>
+    </view>
+  </scroll-view>
+</view>
+

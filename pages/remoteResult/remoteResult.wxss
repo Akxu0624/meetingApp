@@ -1,0 +1,98 @@
+page{
+	height: 100%;
+	width: 100%;
+	background: #eee;
+}
+.title {
+	text-indent: 12rpx;
+	background: #1D8CE0;
+	padding: 10rpx 0;
+	color: #fff;
+}
+.s-time {
+	display: inline-block;
+}
+.e-time {
+	display: inline-block;
+}
+.li-icon {
+	width: 40rpx;
+	height: 40rpx;
+	display: inline-block;
+	position: relative;
+	top: 7rpx;
+	margin-left: 8rpx;
+}
+.list-item {
+	border: 3rpx solid #ddd;
+	padding: 15rpx;
+	background: #fff;
+	position: relative;
+	overflow: hidden;
+}
+.list-item-active {
+	border: 3rpx solid #ddd;
+	margin: 20rpx 0;
+	padding: 15rpx;
+	background: #fff;
+	position: relative;
+	height: 170rpx;
+	overflow: hidden;
+}
+.li-left {
+	flex: 1;
+	padding: 35rpx 0;
+	font-szie: 36rpx;
+}
+.li-right {
+	flex:4;
+	font-size: 36rpx;
+	padding: 10rpx 0 10rpx 20rpx;
+}
+.li-reserve{
+	display: inline-block;
+	width: 130rpx;
+	text-align: center;
+	border: 2rpx solid #099fde;
+	border-radius: 10rpx;
+	height: 60rpx;
+	line-height: 60rpx;
+	position: absolute;
+	right: 17rpx;
+}
+.li-name {
+	display: inline-block;
+	width: 350rpx;
+	white-space: nowrap; 
+    overflow: hidden; 
+    text-overflow: ellipsis;
+    vertical-align: bottom;
+}
+.li-num {
+	display: inline-block;
+	font-size: 26rpx;
+	color: #B2B2B2;
+	text-indent: 8rpx;
+	margin-right: 7rpx;
+}
+.li-msg {
+	font-size:28rpx;
+	color: #FF4949;
+}
+.li-row {
+	height: 60rpx;
+}
+.li-down {
+	position: absolute;
+	top: 136rpx;
+	width: 125rpx;
+	height: 55rpx;
+	right: 10rpx;
+}
+.li-down image{
+	width: 50rpx;
+	height: 22rpx;
+	position: absolute;
+	left: 35rpx;
+	top: 20rpx;
+}

@@ -1,0 +1,73 @@
+.page {
+	height: 100%;
+	background-color: #efefef;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	box-sizing: border-box;
+}
+.p-container {
+	width: 100%;
+}
+.title {
+	width: 100%;
+	background: #1D8CE0;
+	color: #fff;
+	font-size: 36rpx;
+	padding: 10rpx 0;
+	text-indent: 36rpx;
+}
+.list-wrap {
+	width: 100%;
+}
+.main-list {
+	display: flex;
+	width: 100%;
+	background: #fff;
+	padding: 16rpx 0;
+	border-bottom: 3rpx solid #ddd;
+}
+.list-left {
+	flex: 1;
+	text-align: center;
+	padding: 10rpx 0;
+}
+.list-right {
+	flex: 3;
+	border-left: 4rpx solid #abe2f9;
+	padding: 0 40rpx;
+}
+.start-time, .end-time {
+	height: 60rpx;
+	line-height: 60rpx;
+}
+.list-icon {
+	width: 40rpx;
+	height: 40rpx;
+	border-radius: 50%;
+	display: inline-block;
+	vertical-align: sub;
+}
+.list-initiator {
+	height: 60rpx;
+	line-height: 60rpx;
+}
+.list-title {
+	height: 70rpx;
+	line-height: 88rpx;
+	overflow: hidden;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+	width: 400rpx;
+	font-size: 38rpx;
+}
+.list-people {
+	display: inline-block;
+	color: #aeaeae;
+	font-size: 32rpx;
+}
+.no-data {
+	width: 400rpx;
+	height: 290rpx;
+	margin-top: 270rpx;
+}

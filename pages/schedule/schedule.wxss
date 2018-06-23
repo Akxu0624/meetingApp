@@ -1,0 +1,61 @@
+.page {
+    height: 100%;
+    background: #efefef;
+}
+.schedule-wrap {
+    background: #fff;
+    padding-top: 8rpx;
+    padding-bottom: 8rpx;
+}
+.s-item {
+    position: relative;
+    background: #fff;
+    margin-left: 28rpx;
+    border-bottom: 3rpx solid #f4f4f4;
+}
+.s-title {
+    font-size: 36rpx;
+}
+.s-loc {
+    color: #707070;
+    font-size: 34rpx;
+}
+.s-ymd {
+    display: inline-block;
+    color: #aeaeae;
+    margin-right: 20rpx;
+    font-size: 28rpx;
+}
+.s-date {
+    display: inline-block;
+    color: #aeaeae;
+    font-size: 28rpx;
+}
+.s-details {
+    position: absolute;
+    top: 0;
+    right: 0rpx;
+    height: 100%;
+    width: 130rpx;
+    text-align: center;
+}
+.s-details image{
+    position: absolute;
+    display: inline-block;
+    width: 15rpx;
+    height: 30rpx;
+    padding: 70rpx 0;
+}
+.s-reserve {
+    position: fixed;
+    width: 100rpx;
+    height: 100rpx;
+    border-radius: 50%;
+    background: #58B7FF;
+    right: 50rpx;
+    bottom: 90rpx;
+}
+.s-reserve image {
+    width: 100%;
+    height: 100%;
+}

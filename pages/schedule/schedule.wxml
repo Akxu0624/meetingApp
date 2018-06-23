@@ -1,0 +1,42 @@
+<!-- schedule.wxml -->
+<view class="page">
+    <view class="schedule-wrap">
+        <navigator class="s-item" url="../details/details">
+            <view class="s-title">世界杯吐槽大会</view>
+            <view class="s-loc">深圳桃花源会议室</view>
+            <view class="s-time-wrap">
+                <view class="s-ymd">2018-06-30</view>
+                <view class="s-date">12:00-14:30</view>
+            </view>
+            <view class="s-details">
+                <image src="../../images/icon-arrow.png"></image>
+            </view>
+        </navigator>
+        <navigator class="s-item" url="../details/details">
+            <view class="s-title">巴西VS瑞士</view>
+            <view class="s-loc">广州小蛮腰会议室</view>
+            <view class="s-time-wrap">
+                <view class="s-ymd">2018-06-14</view>
+                <view class="s-date">14:00-16:30</view>
+            </view>
+            <view class="s-details">
+                <image src="../../images/icon-arrow.png"></image>
+            </view>
+        </navigator>
+        <navigator class="s-item" url="../details/details">
+            <view class="s-title">中国VS冰岛</view>
+            <view class="s-loc">北京天安门会议室</view>
+            <view class="s-time-wrap">
+                <view class="s-ymd">2099-12-09</view>
+                <view class="s-date">14:00-15:30</view>
+            </view>
+            <view class="s-details">
+                <image src="../../images/icon-arrow.png"></image>
+            </view>
+        </navigator>
+    </view>
+    <navigator class="s-reserve" url="../reserve/reserve">
+        <image src="../../images/add.png"></image>
+    </navigator>
+</view>
+

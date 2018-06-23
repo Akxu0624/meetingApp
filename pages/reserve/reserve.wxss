@@ -1,0 +1,68 @@
+.reserve {
+	color: #fff;
+	background: #1D8CE0;
+	height: 80rpx;
+	line-height: 80rpx;
+	width: 92%;
+	margin-top: 55rpx;
+}
+.weui-label {
+	width: 160rpx !important;
+}
+.weui-cell_input {
+	padding-top:8rpx !important;
+	padding-bottom:8rpx !important;
+}
+.r-right {
+	width: 22rpx;
+	height: 37rpx;
+	border-radius: 50%;
+	display: inline-block;
+	vertical-align: middle;
+	margin: 18rpx;
+}
+.list-name {
+	display: inline-block;
+	text-align: center;
+	margin: 0 20rpx 15rpx 0;
+	padding: 0 20rpx;
+	font-size: 24rpx;
+	height: 62rpx;
+	line-height: 62rpx;
+	border-radius: 8rpx;
+	background: #1D8CE0;
+	color: #fff;
+}
+.list-del {
+	position: absolute;
+	width: 30rpx;
+	height: 30rpx;
+	background: #FF4949;
+	border-radius: 50%;
+	top: 0;
+	right: 0;
+}
+.list-del image{
+	position: absolute;
+	width: 30rpx;
+	height: 30rpx;
+	background: #FF4949;
+	border-radius: 50%;
+	top: 0;
+	right: 0;
+}
+.list-room {
+	display: inline-block;
+	padding: 0 20rpx;
+	text-align: center;
+	margin: 0 20rpx 15rpx 0;
+	font-size: 24rpx;
+	height: 62rpx;
+	line-height: 62rpx;
+	border-radius: 8rpx;
+	background: #1D8CE0;
+	color: #fff;
+}
+.c-list {
+	line-height:2.58823529em;
+}

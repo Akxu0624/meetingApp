@@ -1,0 +1,67 @@
+<view class="page">
+  <view class="page__bd">
+    <view class="weui-search-bar">
+      <view class="weui-search-bar__form">
+        <view class="weui-search-bar__box">
+            <icon class="weui-icon-search_in-box" type="search" size="14"></icon>
+            <input 
+              type="text" 
+              class="weui-search-bar__input" 
+              placeholder="搜索" 
+              value="{{inputVal}}" 
+              focus="{{inputShowed}}" 
+              bindinput="inputTyping" 
+            />
+            <view class="weui-icon-clear" wx:if="{{inputVal.length > 0}}" bindtap="clearInput">
+                <icon type="clear" size="14"></icon>
+            </view>
+        </view>
+      <label class="weui-search-bar__label" hidden="{{inputShowed}}" bindtap="showInput">
+          <icon class="weui-icon-search" type="search" size="14"></icon>
+          <view class="weui-search-bar__text">搜索</view>
+      </label>
+    </view>
+    <view class="weui-search-bar__cancel-btn" hidden="{{!inputShowed}}" bindtap="hideInput">取消</view>
+  </view>
+  <view class="weui-cells searchbar-result" wx:if="{{inputVal.length > 0}}">
+      <view wx:for="{{inputList}}" 
+            wx:for-item="ct" 
+            wx:key="{{ct.email}}" 
+            data-email="{{ct.email}}" 
+            data-name="{{ct.name}}" 
+            data-item="{{ct}}"
+            class="weui-cell" 
+            hover-class="weui-cell_active"
+            bindtap="searchSelectedEvent" >
+          <view class="weui-cell__bd">
+              <view>{{ct.name}}</view>
+              <view>{{ct.email}}</view>
+          </view>
+      </view>
+  </view>
+</view>
+<view class="searchLetter touchClass">
+  <view wx:for="{{searchLetter}}" style="color:#2ab4ff;font-size:28rpx;" wx:key="index" data-letter="{{item.name}}" catchtouchend="clickLetter" >{{item.name}}</view>
+</view>
+<!--侧边字母选择栏-->
+<block wx:if="{{isShowLetter}}">
+  <view class="showSlectedLetter">
+    {{showLetter}}
+  </view>
+</block>
+<!--主界面-->
+<scroll-view scroll-y="true" style="height:{{winHeight}}px" bindscroll="bindScroll" 
+ scroll-into-view="{{scrollTopId}}" scroll-top="{{scrollTop}}">
+  <view class="selection" wx:for="{{contactsList}}" wx:key="{{item.initial}}">
+    <view class="item_letter"  id="{{item.initial}}">{{item.initial}}</view>
+    <view class="item_city"  wx:for="{{item.contactsInfo}}" wx:for-item="ct" wx:key="{{ct.email}}" data-email="{{ct.email}}" data-name="{{ct.name}}" bindtap="onSelectItem">
+      <view style="display: inline-block; font-size: 36rpx;">{{ct.name}}</view>
+      <view style="display: inline-block; color: #9e9ea3;font-size: 33rpx;">{{ct.email}}</view>
+      <!--选中钩子，根据check属性判断-->
+      <view class="s-check" wx:if="{{ct.check}}" >
+        <image src="../../images/check.png"></image>
+      </view>
+    </view>
+  </view>
+</scroll-view>
+</view>

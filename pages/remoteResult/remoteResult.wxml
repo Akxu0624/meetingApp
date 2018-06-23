@@ -1,0 +1,97 @@
+<view class="page">
+	<view>
+	</view>
+	<view class="satisfy-container">
+		<view class="title">全满足</view>
+		<view class="list">
+			<view class="list-item" 
+				wx:for="{{dataList.fullSatisfied}}"
+				wx:key="{{dataList.fullSatisfied}}">
+				<view>
+					<view class="s-time">{{item.startTime}}</view>
+					<view style="display: inline-block;margin:0 20rpx;">至</view>
+					<view class="e-time">{{item.endTime}}</view>					
+					<view
+						class="li-reserve" 
+						bindtap="goReserve"
+						data-stime="{{item.startTime}}" 
+						data-etime="{{item.endTime}}" 
+						data-attendees="{{item.attendees}}"
+						data-room="{{item.meetingRooms}}">
+						预约
+					</view>		
+				</view>
+				<view>
+					<view class="li-row" 
+						wx:for="{{item.meetingRooms}}" 
+						wx:for-item="itemRoom"
+						wx:key="{{item.meetingRooms}}">
+						<view class="li-name">{{itemRoom.roomName}}</view>
+						<image wx:if="{{itemRoom.hasPhone}}" class="li-icon" src="../../images/phone.png"></image>
+						<image wx:if="{{itemRoom.hasVideo}}" class="li-icon" src="../../images/video.png"></image>
+						<image class="li-icon" src="../../images/num.png"></image>
+						<view class="li-num">
+							可容纳{{itemRoom.maxAttendees}}人
+						</view>
+					</view>
+				</view>
+			</view>
+		</view>
+	</view>
+	<view class="noDev-container">
+		<view class="title">设备未满足</view>
+		<view class="list">
+			<view class="list-item"
+				wx:for="{{dataList.lackDevice}}"
+				wx:key="{{dataList.lackDevice}}">
+				<view>
+					<view class="s-time">{{item.startTime}}</view>
+					<view style="display: inline-block;margin:0 20rpx;">至</view>
+					<view class="e-time">{{item.endTime}}</view>		
+				</view>
+				<view>
+					<view class="li-row" 
+						wx:for="{{item.meetingRooms}}" 
+						wx:for-item="itemRoom"
+						wx:key="{{item.meetingRooms}}">
+						<view class="li-name">{{itemRoom.roomName}}</view>
+						<image wx:if="{{itemRoom.hasPhone}}" class="li-icon" src="../../images/phone.png"></image>
+						<image wx:if="{{itemRoom.hasVideo}}" class="li-icon" src="../../images/video.png"></image>
+						<image class="li-icon" src="../../images/num.png"></image>
+						<view class="li-num">
+							可容纳{{itemRoom.maxAttendees}}人
+						</view>
+					</view>
+				</view>
+			</view>
+		</view>
+	</view>
+	<view class="noPeo-container">
+		<view class="title">人员未满足</view>
+		<view class="list">
+			<view class="list-item" 
+				wx:for="{{dataList.lackPeople}}" 
+				wx:key="{{dataList.lackPeople}}">
+				<view>
+					<view class="s-time">{{item.startTime}}</view>
+					<view style="display: inline-block;margin:0 20rpx;">至</view>
+					<view class="e-time">{{item.endTime}}</view>		
+				</view>
+				<view>
+					<view class="li-row" 
+						wx:for="{{item.meetingRooms}}" 
+						wx:for-item="itemRoom"
+						wx:key="{{item.meetingRooms}}">
+						<view class="li-name">{{itemRoom.roomName}}</view>
+						<image wx:if="{{itemRoom.hasPhone}}" class="li-icon" src="../../images/phone.png"></image>
+						<image wx:if="{{itemRoom.hasVideo}}" class="li-icon" src="../../images/video.png"></image>
+						<image class="li-icon" src="../../images/num.png"></image>
+						<view class="li-num">
+							可容纳{{itemRoom.maxAttendees}}人
+						</view>
+					</view>
+				</view>
+			</view>
+		</view>
+	</view>
+</view>
