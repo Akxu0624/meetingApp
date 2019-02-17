@@ -16,7 +16,7 @@
   ],
   "window": {
     "navigationBarBackgroundColor": "#0068c4",
-    "navigationBarTextStyle": "#fff",
+    "navigationBarTextStyle": "white",
     "navigationBarTitleText": "会议室预定助手",
     "backgroundColor": "#eeeeee",
     "backgroundTextStyle": "light"
@@ -43,8 +43,8 @@
       }
     ],
     "position": "bottom",
-    "borderStyle": "#000",
+    "borderStyle": "black",
     "selectedColor": "#1296db"
   },
-  "debug": "true"
+  "debug": true
 }

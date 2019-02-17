@@ -1,5 +1,5 @@
 {
-    "navigationBarTextStyle": "#fff",
+    "navigationBarTextStyle": "white",
     "navigationBarTitleText": "搜索结果",
     "backgroundColor": "#fff",
     "backgroundTextStyle": "light"
