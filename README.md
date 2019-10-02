@@ -36,3 +36,8 @@
 git clone 该项目到本地用微信Web开发者工具打开即可
 
 PS:打开项目需要小程序id，注册一个小程序就可以了 [传送门](https://mp.weixin.qq.com/cgi-bin/wx)
+
+### 如果觉的有帮助的话，可以赞赏下小编喔，感谢支持
+有疑问可以留言issue或者邮箱给我喔，邮箱是348194283@qq.com
+<img src="./images/code.jpeg" width="320" height="320"/>
+
